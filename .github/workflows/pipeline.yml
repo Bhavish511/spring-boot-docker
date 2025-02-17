@@ -1,16 +1,13 @@
+---
 name: CI/CD Pipeline
-
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
-
-
+  workflow_dispatch: null
 jobs:
   build:
     runs-on: ubuntu-latest
-
   steps:
     - name: check out mode
       uses: actions/checkout@v4
